@@ -1,0 +1,31 @@
+import { Component } from '@angular/core';
+import * as Ajax from "src/AjaxFunctions";
+
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  
+})
+export class AppComponent {
+  title = 'AngularProjecx';
+
+
+
+  Ajax(){
+    Ajax.SignUp("ahe","asd123","ahmet","kart");
+    Ajax.SignIn("ahe","asd123");
+    Ajax.GetCategories();
+    Ajax.GetCategoryById(1);
+    Ajax.AddCategory("TEKNOLOJİ","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJ1c2VybmFtZSI6ImFoZSIsInBhc3N3b3JkIjoiJDJiJDEwJFA1TTdmbzRJaU9aUDZNanJuLkFoYy5yOUkySmhwd2VmLy5DQVlSWkc4RmQyYldUSW9LVFppIiwibmFtZSI6ImFobWV0Iiwic3VybmFtZSI6ImthcnQiLCJjcmVhdGVkQXQiOiIyMDIwLTEyLTI4IiwidXBkYXRlZEF0IjoiMjAyMC0xMi0yOCJ9LCJpYXQiOjE2MDkxODIzNzYsImV4cCI6MTYwOTI2ODc3Nn0.QXlmjXrMWAQAMx6aAwh6P-CUFMWou5oEQLFR3xKPXH0");
+    Ajax.UpdateCategory(1,"SİYASET","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJ1c2VybmFtZSI6ImFoZSIsInBhc3N3b3JkIjoiJDJiJDEwJFA1TTdmbzRJaU9aUDZNanJuLkFoYy5yOUkySmhwd2VmLy5DQVlSWkc4RmQyYldUSW9LVFppIiwibmFtZSI6ImFobWV0Iiwic3VybmFtZSI6ImthcnQiLCJjcmVhdGVkQXQiOiIyMDIwLTEyLTI4IiwidXBkYXRlZEF0IjoiMjAyMC0xMi0yOCJ9LCJpYXQiOjE2MDkxODIzNzYsImV4cCI6MTYwOTI2ODc3Nn0.QXlmjXrMWAQAMx6aAwh6P-CUFMWou5oEQLFR3xKPXH0");
+    Ajax.DeleteCategory(2,"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJ1c2VybmFtZSI6ImFoZSIsInBhc3N3b3JkIjoiJDJiJDEwJFA1TTdmbzRJaU9aUDZNanJuLkFoYy5yOUkySmhwd2VmLy5DQVlSWkc4RmQyYldUSW9LVFppIiwibmFtZSI6ImFobWV0Iiwic3VybmFtZSI6ImthcnQiLCJjcmVhdGVkQXQiOiIyMDIwLTEyLTI4IiwidXBkYXRlZEF0IjoiMjAyMC0xMi0yOCJ9LCJpYXQiOjE2MDkxODIzNzYsImV4cCI6MTYwOTI2ODc3Nn0.QXlmjXrMWAQAMx6aAwh6P-CUFMWou5oEQLFR3xKPXH0");
+    Ajax.GetNews();
+    Ajax.GetCategoryById(1);
+    Ajax.AddNews(3,"TITLE","CONTENT","THUMBNAIL","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJ1c2VybmFtZSI6ImFoZSIsInBhc3N3b3JkIjoiJDJiJDEwJFA1TTdmbzRJaU9aUDZNanJuLkFoYy5yOUkySmhwd2VmLy5DQVlSWkc4RmQyYldUSW9LVFppIiwibmFtZSI6ImFobWV0Iiwic3VybmFtZSI6ImthcnQiLCJjcmVhdGVkQXQiOiIyMDIwLTEyLTI4IiwidXBkYXRlZEF0IjoiMjAyMC0xMi0yOCJ9LCJpYXQiOjE2MDkxODIzNzYsImV4cCI6MTYwOTI2ODc3Nn0.QXlmjXrMWAQAMx6aAwh6P-CUFMWou5oEQLFR3xKPXH0");
+    Ajax.UpdateNews(1,"TITLE","CONTENT","THUMBNAIL","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJ1c2VybmFtZSI6ImFoZSIsInBhc3N3b3JkIjoiJDJiJDEwJFA1TTdmbzRJaU9aUDZNanJuLkFoYy5yOUkySmhwd2VmLy5DQVlSWkc4RmQyYldUSW9LVFppIiwibmFtZSI6ImFobWV0Iiwic3VybmFtZSI6ImthcnQiLCJjcmVhdGVkQXQiOiIyMDIwLTEyLTI4IiwidXBkYXRlZEF0IjoiMjAyMC0xMi0yOCJ9LCJpYXQiOjE2MDkxODIzNzYsImV4cCI6MTYwOTI2ODc3Nn0.QXlmjXrMWAQAMx6aAwh6P-CUFMWou5oEQLFR3xKPXH0");
+    Ajax.DeleteNews(1,"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoyLCJ1c2VybmFtZSI6ImFoZSIsInBhc3N3b3JkIjoiJDJiJDEwJFA1TTdmbzRJaU9aUDZNanJuLkFoYy5yOUkySmhwd2VmLy5DQVlSWkc4RmQyYldUSW9LVFppIiwibmFtZSI6ImFobWV0Iiwic3VybmFtZSI6ImthcnQiLCJjcmVhdGVkQXQiOiIyMDIwLTEyLTI4IiwidXBkYXRlZEF0IjoiMjAyMC0xMi0yOCJ9LCJpYXQiOjE2MDkxODIzNzYsImV4cCI6MTYwOTI2ODc3Nn0.QXlmjXrMWAQAMx6aAwh6P-CUFMWou5oEQLFR3xKPXH0")
+
+  }
+}
